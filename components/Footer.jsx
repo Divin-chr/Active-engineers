@@ -29,7 +29,10 @@ export default function Footer() {
         <div>
           <h4>Contact Info</h4>
           <p className="footer-contact-item">
-            <MapPin aria-hidden="true" /> KG14 Ave, Gisozi, Kigali — Rwanda
+            <MapPin aria-hidden="true" />{" "}
+            <a href="https://maps.app.goo.gl/RFJBAnzWnBmPauit9" target="_blank" rel="noopener noreferrer">
+              KG14 Ave, Gisozi, Kigali — Rwanda
+            </a>
           </p>
           <p className="footer-contact-item">
             <Mail aria-hidden="true" /> activegroup2021@gmail.com

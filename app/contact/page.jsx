@@ -23,7 +23,11 @@ export default function ContactPage() {
                     <td className="table-label">
                       <MapPin aria-hidden="true" /> Address
                     </td>
-                    <td>2nd Floor, near Adventist Gisozi, KG14 Ave, Kigali, Rwanda</td>
+                    <td>
+                      <a href="https://maps.app.goo.gl/RFJBAnzWnBmPauit9" target="_blank" rel="noopener noreferrer">
+                        2nd Floor, near Adventist Gisozi, KG14 Ave, Kigali, Rwanda
+                      </a>
+                    </td>
                   </tr>
                   <tr>
                     <td className="table-label">
@@ -69,7 +73,7 @@ export default function ContactPage() {
                 loading="lazy"
                 allowFullScreen
                       
-                src="https://www.google.com/maps?q=KG14%20Ave%2C%20Gisozi%2C%20Kigali&output=embed"
+                src="https://www.google.com/maps?q=-1.925326,30.055490&output=embed"
               />
             </div>
           </StaggerItem>
