@@ -25,7 +25,7 @@ export default function ContactPage() {
                     </td>
                     <td>
                       <a href="https://maps.app.goo.gl/RFJBAnzWnBmPauit9" target="_blank" rel="noopener noreferrer">
-                        2nd Floor, near Adventist Gisozi, KG14 Ave, Kigali, Rwanda
+                        3rd Floor, near Romantic Garden, Gisozi, KG14 Ave, Kigali, Rwanda
                       </a>
                     </td>
                   </tr>
