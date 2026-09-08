@@ -193,7 +193,7 @@ export default function HomePage() {
           <StaggerGroup className="construction-grid">
             <StaggerItem
               className="construction-box"
-              style={{ backgroundImage: "url('/assets/img/Image1 (1).jpg')" }}
+              style={{ backgroundImage: "url('/assets/img/Image1 (2).jpg')" }}
               whileHover={{ y: -6 }}
             >
               <div className="construction-overlay">
@@ -207,7 +207,7 @@ export default function HomePage() {
 
             <StaggerItem
               className="construction-box"
-              style={{ backgroundImage: "url('/assets/img/image1 (6).jpg')" }}
+              style={{ backgroundImage: "url('/assets/img/agatobwe-bridge.jpg')" }}
               whileHover={{ y: -6 }}
             >
               <div className="construction-overlay">
@@ -221,7 +221,7 @@ export default function HomePage() {
 
             <StaggerItem
               className="construction-box"
-              style={{ backgroundImage: "url('/assets/img/Image1 (2).jpg')" }}
+              style={{ backgroundImage: "url('/assets/img/Image1 (4).jpg')" }}
               whileHover={{ y: -6 }}
             >
               <div className="construction-overlay">
@@ -235,7 +235,7 @@ export default function HomePage() {
 
             <StaggerItem
               className="construction-box"
-              style={{ backgroundImage: "url('/assets/img/Image1 (4).jpg')" }}
+              style={{ backgroundImage: "url('/assets/img/sake-water-supply.jpg')" }}
               whileHover={{ y: -6 }}
             >
               <div className="construction-overlay">
