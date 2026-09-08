@@ -1,8 +1,8 @@
 export const BLOG_POSTS = [
   {
     slug: "value-engineering-urban-roads",
-    image: "/assets/img/10.jpg",
-    alt: "Urban road with traffic",
+    image: "/assets/img/rwempasha.jpg",
+    alt: "Asphalt paving works on an urban road",
     category: "Road Design",
     date: "March 15, 2024",
     author: "Eng. Virgile Mugisha",
@@ -37,8 +37,8 @@ export const BLOG_POSTS = [
   },
   {
     slug: "street-lighting-safer-mobility",
-    image: "/assets/img/8.jpg",
-    alt: "Modern street lights at dusk",
+    image: "/assets/img/street-lighting.jpg",
+    alt: "Street lighting poles along a road",
     category: "Urban Design",
     date: "Feb 15, 2024",
     author: "Eng. Jean Bosco Nizeyimana",
@@ -54,8 +54,8 @@ export const BLOG_POSTS = [
   },
   {
     slug: "modern-bridge-construction",
-    image: "/assets/img/2.jpg",
-    alt: "Bridge construction site",
+    image: "/assets/img/agatobwe-bridge.jpg",
+    alt: "Structural analysis model of a double-span bridge",
     category: "Bridge Design",
     date: "Jan 30, 2024",
     author: "Eng. Innocent Niyonsaba",
@@ -72,7 +72,7 @@ export const BLOG_POSTS = [
   },
   {
     slug: "sustainable-water-management",
-    image: "/assets/img/6.jpg",
+    image: "/assets/img/ngororero-water-supply.jpg",
     alt: "Water supply pipeline works",
     category: "Water Resources",
     date: "Jan 18, 2024",
