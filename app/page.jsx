@@ -3,6 +3,40 @@ import Reveal from "../components/Reveal";
 import { StaggerGroup, StaggerItem } from "../components/Stagger";
 import HeroCanvas from "../components/three/HeroCanvas";
 import { HeroIntro, HeroKicker, HeroTitle, HeroLead, HeroActions } from "../components/HeroIntro";
+import CountUpStat from "../components/effects/CountUpStat";
+import {
+  ShieldCheck,
+  Award,
+  Leaf,
+  Users,
+  Lightbulb,
+  Settings2,
+  FolderKanban,
+  Building2,
+  Target,
+  Eye,
+} from "lucide-react";
+
+const STATS = [
+  { value: 50, suffix: "+", label: "Projects Completed" },
+  { value: 487, suffix: " km", label: "Water Supply Surveys" },
+  { value: 100, suffix: "%", label: "Client Satisfaction" },
+];
+
+const TESTIMONIALS = [
+  {
+    quote:
+      "Active Engineering Group delivered exceptional value engineering that saved our project 15% in costs while maintaining the highest quality standards. Their attention to detail is remarkable.",
+    author: "RTDA Representative",
+    company: "Road Transport Development Agency",
+  },
+  {
+    quote:
+      "Their expertise in surveying and mapping was instrumental in the success of our water supply project. Professional team with excellent communication throughout the project lifecycle.",
+    author: "Powerchina Project Manager",
+    company: "Sake Water Supply System",
+  },
+];
 
 export const metadata = {
   title: "Active Engineering Group | Civil Engineering & Project Management",
@@ -52,20 +86,20 @@ export default function HomePage() {
           </p>
 
           <StaggerGroup className="values">
-            <StaggerItem as="span" className="value">
-              Integrity
+            <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+              <ShieldCheck aria-hidden="true" /> Integrity
             </StaggerItem>
-            <StaggerItem as="span" className="value">
-              Excellence
+            <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+              <Award aria-hidden="true" /> Excellence
             </StaggerItem>
-            <StaggerItem as="span" className="value">
-              Sustainability
+            <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+              <Leaf aria-hidden="true" /> Sustainability
             </StaggerItem>
-            <StaggerItem as="span" className="value">
-              Client-Centered
+            <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+              <Users aria-hidden="true" /> Client-Centered
             </StaggerItem>
-            <StaggerItem as="span" className="value">
-              Innovation
+            <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+              <Lightbulb aria-hidden="true" /> Innovation
             </StaggerItem>
           </StaggerGroup>
         </div>
@@ -73,8 +107,21 @@ export default function HomePage() {
 
       <section className="section">
         <div className="container">
+          <div className="stats">
+            {STATS.map((stat) => (
+              <CountUpStat key={stat.label} value={stat.value} suffix={stat.suffix} label={stat.label} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
           <StaggerGroup className="grid-3">
             <StaggerItem className="card" whileHover={{ y: -4 }}>
+              <div className="card-icon">
+                <Settings2 aria-hidden="true" />
+              </div>
               <span className="badge">What we do</span>
               <h3>OUR SERVICES</h3>
               <p>
@@ -88,6 +135,9 @@ export default function HomePage() {
             </StaggerItem>
 
             <StaggerItem className="card" whileHover={{ y: -4 }}>
+              <div className="card-icon">
+                <FolderKanban aria-hidden="true" />
+              </div>
               <span className="badge">Featured</span>
               <h3>SELECTED PROJECTS</h3>
               <p>
@@ -100,6 +150,9 @@ export default function HomePage() {
             </StaggerItem>
 
             <StaggerItem className="card" whileHover={{ y: -4 }}>
+              <div className="card-icon">
+                <Building2 aria-hidden="true" />
+              </div>
               <span className="badge">Who we are</span>
               <h3>ABOUT AEG</h3>
               <p>
@@ -196,8 +249,44 @@ export default function HomePage() {
 
       <section className="section">
         <div className="container">
+          <h2 className="section-title">Client Testimonials</h2>
+          <p className="section-subtitle">
+            What our clients say about working with Active Engineering Group
+          </p>
+          <StaggerGroup className="grid-2">
+            {TESTIMONIALS.map((testimonial) => (
+              <StaggerItem className="card" key={testimonial.author} whileHover={{ y: -4 }}>
+                <p style={{ fontStyle: "italic" }}>&ldquo;{testimonial.quote}&rdquo;</p>
+                <div style={{ marginTop: "auto", fontWeight: 700 }}>{testimonial.author}</div>
+                <div className="section-subtitle" style={{ margin: 0 }}>
+                  {testimonial.company}
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerGroup>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container" style={{ textAlign: "center" }}>
+          <h2 className="section-title">Trusted By Industry Leaders</h2>
+          <Reveal>
+            <img
+              src="/client.png"
+              alt="Trusted by RTDA, Kigali City, Powerchina, Government of Rwanda, World Bank"
+              style={{ maxWidth: 900, width: "100%", height: "auto" }}
+            />
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
           <StaggerGroup className="grid-2">
             <StaggerItem className="card" whileHover={{ y: -4 }}>
+              <div className="card-icon">
+                <Target aria-hidden="true" />
+              </div>
               <h2 className="section-title">MISSION</h2>
               <p>
                 Deliver innovative, efficient, and sustainable engineering solutions that maximize
@@ -206,6 +295,9 @@ export default function HomePage() {
             </StaggerItem>
 
             <StaggerItem className="card" whileHover={{ y: -4 }}>
+              <div className="card-icon">
+                <Eye aria-hidden="true" />
+              </div>
               <h2 className="section-title">VISION</h2>
               <p>
                 Inspire confidence in everything we do while shaping resilient infrastructure

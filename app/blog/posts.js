@@ -1,0 +1,131 @@
+export const BLOG_POSTS = [
+  {
+    slug: "value-engineering-urban-roads",
+    image: "/assets/img/10.jpg",
+    alt: "Urban road with traffic",
+    category: "Road Design",
+    date: "March 15, 2024",
+    author: "Eng. Virgile Mugisha",
+    readTime: "6 min read",
+    featured: true,
+    title: "VALUE ENGINEERING FOR URBAN ROADS: OPTIMIZING COST, SAFETY, AND CONSTRUCTABILITY",
+    excerpt:
+      "Discover how early design audits can save up to 15% on urban road projects while maintaining the highest quality standards. Our latest case study reveals innovative approaches to value engineering that enhance both safety and sustainability.",
+    body: [
+      "On the Huye City Roads project (RUDP Phase 3), our team ran a value engineering audit before the detailed design of the Rwabuye-Mbazi corridor was finalized. Rather than treating cost optimization as a final check before tender, we brought it into the design process itself — reviewing alignment choices, pavement structure, and drainage layout while there was still room to change direction cheaply.",
+      "The audit flagged three areas where the initial concept over-specified for the actual traffic loading and soil conditions: pavement thickness, culvert sizing, and street lighting spacing. Adjusting these to match the site data — without compromising the 20-year design life — reduced material quantities materially across the 6 km corridor.",
+      "Safety was never traded for cost. Where the audit found under-provision — sight lines at the Tumba junction, and pedestrian crossing points along the market frontage — we added scope rather than cut it. Value engineering only works when it is a two-way conversation between cost and safety, not a one-way squeeze.",
+      "The result was a design that came in under the original cost envelope while meeting stricter safety criteria than the initial concept. We now run this same early audit on every road project before detailed design is locked, regardless of size.",
+    ],
+  },
+  {
+    slug: "survey-accuracy-at-scale",
+    image: "/assets/img/9.jpg",
+    alt: "Surveyor using equipment in the field",
+    category: "Surveying",
+    date: "Feb 28, 2024",
+    author: "Norbert Nsanzimana",
+    readTime: "5 min read",
+    title: "SURVEY ACCURACY AT SCALE",
+    excerpt: "Lessons learned from 487 km of WSS surveys and control network design.",
+    body: [
+      "The Sake Water Supply System survey covered 487 km of pipeline corridor across varied terrain, from flat valley floors to steep hillside sections. At that scale, accuracy is not just a matter of good equipment — it's a matter of control network design decided before a single point is measured in the field.",
+      "We established a primary GNSS control network at intervals sized to the terrain, densified with total station traverses through areas where satellite visibility was poor under tree cover or steep cuttings. Every control point was cross-checked against at least two independent observations before it was accepted into the network.",
+      "The discipline that mattered most was closing the loop: every traverse was tied back into the primary control before the survey crew moved on, rather than after the fact. That caught accumulated error early, when it was still cheap to re-observe a short section, instead of discovering it 40 km later.",
+      "The result was a survey dataset accurate enough to support detailed pipeline design without re-verification — millimeter-level control that held consistently across the full corridor, not just near the reference stations.",
+    ],
+  },
+  {
+    slug: "street-lighting-safer-mobility",
+    image: "/assets/img/8.jpg",
+    alt: "Modern street lights at dusk",
+    category: "Urban Design",
+    date: "Feb 15, 2024",
+    author: "Eng. Jean Bosco Nizeyimana",
+    readTime: "4 min read",
+    title: "STREET LIGHTING FOR SAFER MOBILITY",
+    excerpt: "Designing efficient lighting schemes that enhance safety and reduce energy use.",
+    body: [
+      "Our detailed design for street lighting along the Huye–Kibeho corridor in Nyaruguru District started from a simple question: where do pedestrians actually walk after dark, and does the current layout light that path, or just the carriageway?",
+      "Pole spacing was set against sightline and glare calculations rather than a fixed default interval, giving continuous, even illumination along the walking edge at junctions and market frontages where pedestrian volumes are highest, while relaxing spacing on open rural stretches.",
+      "Fixture selection favored efficient luminaires that cut energy consumption relative to the conventional fittings they replaced, without reducing the lit area — the saving came from optics and control, not from lighting less of the road.",
+      "Lighting design is often treated as an afterthought to road design. Treated as its own discipline — with its own sightline and safety calculations — it measurably changes how safe a corridor feels to walk at night.",
+    ],
+  },
+  {
+    slug: "modern-bridge-construction",
+    image: "/assets/img/2.jpg",
+    alt: "Bridge construction site",
+    category: "Bridge Design",
+    date: "Jan 30, 2024",
+    author: "Eng. Innocent Niyonsaba",
+    readTime: "6 min read",
+    title: "MODERN BRIDGE CONSTRUCTION: MATERIALS AND TECHNIQUES",
+    excerpt:
+      "New materials and construction techniques that are revolutionizing bridge engineering in Rwanda's challenging terrain.",
+    body: [
+      "The Agatobwe double-span bridge (60 m) sits over a river crossing with a soil profile that ruled out a simple shallow foundation. Getting the geotechnical model right up front — rather than adjusting the foundation design mid-construction — was the single biggest driver of the final structural scheme.",
+      "We carried the structural analysis through several span-arrangement options before settling on the double-span configuration, weighing pier cost against superstructure cost across the river's seasonal flow range rather than optimizing for the dry-season condition alone.",
+      "Constructability review happened alongside the structural design, not after it: falsework access, casting sequence, and curing time in Rwanda's rainy-season conditions were all checked against the structural design before it was finalized, so the design that left our office was one that could actually be built on that site with the equipment available.",
+      "Safety audits and structural appraisal don't stop once a bridge opens. We treat inspection and condition assessment as a continuation of the design process, not a separate service — the same engineers who understand why a structure was designed a certain way are best placed to judge how it's aging.",
+    ],
+  },
+  {
+    slug: "sustainable-water-management",
+    image: "/assets/img/6.jpg",
+    alt: "Water supply pipeline works",
+    category: "Water Resources",
+    date: "Jan 18, 2024",
+    author: "IRADUKUNDA Sandrine",
+    readTime: "7 min read",
+    title: "SUSTAINABLE WATER MANAGEMENT",
+    excerpt:
+      "How innovative design and community engagement are ensuring sustainable water access in Rwanda's rural areas.",
+    body: [
+      "Water supply design in rural Rwanda is as much a social planning exercise as it is an engineering one. On the Ngororero water supply system review, the topographic survey and design revisions were carried out alongside consultations with the communities the system serves, because a technically sound network that doesn't match how people actually collect and use water won't be maintained.",
+      "That meant walking the 168.4 km survey corridor with local guidance to confirm tap stand locations matched real settlement patterns, not just the shortest pipe route on a map — a small routing change at the design stage is far cheaper than a tap stand nobody uses after construction.",
+      "Environmental and social safeguards were built into the review from the start: erosion-sensitive crossings were flagged during the survey, and pipe alignments were adjusted to avoid them rather than relying on remediation after the fact.",
+      "Sustainable water access isn't just about the day the system is commissioned — it's about whether it's still functioning, and still trusted by the community, five years later. That's the standard we design against.",
+    ],
+  },
+  {
+    slug: "precision-geodetic-control",
+    image: "/assets/img/7.jpg",
+    alt: "Total station setup on a construction site",
+    category: "Surveying",
+    date: "Jan 5, 2024",
+    author: "Norbert Nsanzimana",
+    readTime: "5 min read",
+    title: "PRECISION GEODETIC CONTROL",
+    excerpt:
+      "The critical role of precise geodetic control in large-scale projects, achieving millimeter accuracy across thousands of hectares.",
+    body: [
+      "Large infrastructure projects live or die on the quality of their geodetic control. Every design drawing, every setting-out point, and every as-built survey ultimately references back to the same handful of control points — get those wrong, and the error propagates through everything built from them.",
+      "Our approach on WGS84 survey work is to over-observe control points rather than accept the minimum, and to independently check every point against a second method before it enters the network. It costs more time in the field. It costs far less time — and money — correcting a misaligned structure later.",
+      "Coordinate system transformation is where a surprising number of large projects lose accuracy, converting between local grid, UTM, and WGS84 without carrying the transformation parameters through consistently. We standardize this at the start of every project so every team, from surveyors to designers to contractors, is working from the same reference frame.",
+      "Precision at this scale isn't glamorous work, but it's the foundation everything else in a project stands on — literally.",
+    ],
+  },
+  {
+    slug: "smart-stormwater-management",
+    image: "/assets/img/1.jpg",
+    alt: "Urban road and drainage works",
+    category: "Environmental",
+    date: "Dec 20, 2023",
+    author: "IRADUKUNDA Sandrine",
+    readTime: "6 min read",
+    title: "SMART STORMWATER MANAGEMENT",
+    excerpt:
+      "Innovative approaches to urban drainage design that help Kigali become more resilient to climate change.",
+    body: [
+      "Kigali's hillside topography means stormwater design has to account for both volume and velocity — water arriving fast from steep upstream catchments is a different design problem than water simply arriving in large quantities on flat ground.",
+      "Our hydraulic analysis for urban drainage schemes models the full catchment, not just the road reserve, because a drainage system sized only for the corridor it sits in will be overwhelmed by runoff from the hillside above it during heavy rains.",
+      "Where possible, we design in attenuation — retention areas and permeable surfacing that slow water down before it reaches the piped network — rather than relying solely on larger pipes to move the problem downstream faster.",
+      "Climate resilience in stormwater design isn't a separate add-on service; it's simply designing for the rainfall intensities Kigali is actually experiencing now, rather than historical averages that no longer hold.",
+    ],
+  },
+];
+
+export function getPostBySlug(slug) {
+  return BLOG_POSTS.find((post) => post.slug === slug);
+}

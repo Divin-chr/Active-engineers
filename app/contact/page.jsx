@@ -1,5 +1,6 @@
 import ContactForm from "../../components/ContactForm";
 import { StaggerGroup, StaggerItem } from "../../components/Stagger";
+import { MapPin, Mail, Phone, Clock } from "lucide-react";
 
 export const metadata = {
   title: "Contact | Active Engineering Group",
@@ -19,16 +20,47 @@ export default function ContactPage() {
               <table className="table">
                 <tbody>
                   <tr>
-                    <td>Address</td>
+                    <td className="table-label">
+                      <MapPin aria-hidden="true" /> Address
+                    </td>
                     <td>2nd Floor, near Adventist Gisozi, KG14 Ave, Kigali, Rwanda</td>
                   </tr>
                   <tr>
-                    <td>Emails</td>
+                    <td className="table-label">
+                      <Mail aria-hidden="true" /> Emails
+                    </td>
                     <td>activegroup2021@gmail.com / sixson2012@gmail.com / msvirgile1@gmail.com</td>
                   </tr>
                   <tr>
-                    <td>Phones</td>
+                    <td className="table-label">
+                      <Phone aria-hidden="true" /> Phones
+                    </td>
                     <td>+250 781 537 973 / +250 788 981 320</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3>
+                <Clock aria-hidden="true" style={{ verticalAlign: "-3px", marginRight: 8 }} />
+                Business Hours
+              </h3>
+              <table className="table">
+                <tbody>
+                  <tr>
+                    <td>Monday – Friday</td>
+                    <td>8:00 AM – 5:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>9:00 AM – 1:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                  </tr>
+                  <tr>
+                    <td>Emergency Support</td>
+                    <td>24/7 available for ongoing projects</td>
                   </tr>
                 </tbody>
               </table>
@@ -36,6 +68,7 @@ export default function ContactPage() {
                 className="map-embed"
                 loading="lazy"
                 allowFullScreen
+                      
                 src="https://www.google.com/maps?q=KG14%20Ave%2C%20Gisozi%2C%20Kigali&output=embed"
               />
             </div>

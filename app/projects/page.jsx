@@ -1,6 +1,7 @@
 import { StaggerGroup, StaggerItem } from "../../components/Stagger";
 import PageHero from "../../components/effects/PageHero";
 import CountUpStat from "../../components/effects/CountUpStat";
+import { MapPin } from "lucide-react";
 
 export const metadata = {
   title: "Projects | Active Engineering Group",
@@ -59,10 +60,39 @@ const PROJECTS = [
     title: "SAKE WATER SUPPLY SYSTEM – RWANDA",
     description: "Topographical surveys for feasibility, detailed designs and supervision (487 km).",
   },
+  {
+    image: "/assets/img/rwempasha.jpg",
+    alt: "Asphalt paving works on the Nyagatare-Rwempasha road",
+    badge: "Nyagatare",
+    title: "NYAGATARE–RWEMPASHA ROAD",
+    description: "Feasibility studies, preliminary and detailed design of the road.",
+  },
+  {
+    image: "/assets/img/kibeho.jpg",
+    alt: "Road junction at Kibeho",
+    badge: "Kibeho",
+    title: "KIBEHO ROUNDABOUT",
+    description: "Study and detailed design of the Kibeho roundabout.",
+  },
+  {
+    image: "/assets/img/mpazi_road.jpg",
+    alt: "Paved parking area under construction",
+    badge: "RWACOF",
+    title: "PARKING AT RWACOF",
+    description: "Consultancy service for design of parking at RWACOF — detailed design report.",
+  },
+  {
+    image: "/assets/img/survey.jpg",
+    alt: "Survey team with total station on the Migina Dyke corridor",
+    badge: "Bugesera",
+    title: "MIGINA DYKE ROAD MAINTENANCE",
+    description:
+      "Feasibility study and detailed design for maintenance of the Migina Dyke Road in Bugesera District.",
+  },
 ];
 
 const STATS = [
-  { value: 7, suffix: "", label: "Flagship Projects" },
+  { value: 11, suffix: "", label: "Flagship Projects" },
   { value: 35, suffix: "+ km", label: "Roads Designed" },
   { value: 650, suffix: "+ km", label: "Water Systems Surveyed" },
   { value: 60, suffix: " m", label: "Longest Span Bridge" },
@@ -88,7 +118,9 @@ export default function ProjectsPage() {
             <StaggerItem className="card" key={project.title} whileHover={{ y: -4 }}>
               <div className="card-img">
                 <img src={project.image} alt={project.alt} />
-                <span className="overlay-badge">{project.badge}</span>
+                <span className="overlay-badge">
+                  <MapPin aria-hidden="true" /> {project.badge}
+                </span>
               </div>
               <h3>{project.title}</h3>
               <p>{project.description}</p>

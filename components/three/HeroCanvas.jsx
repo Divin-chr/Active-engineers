@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { Suspense, useRef } from "react";
 import { useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import { useSafeReducedMotion } from "../useSafeReducedMotion";
+import CanvasErrorBoundary from "./CanvasErrorBoundary";
 
 const Scene = dynamic(() => import("./Scene"), { ssr: false });
 
@@ -57,9 +58,11 @@ export default function HeroCanvas({ children }) {
       onPointerLeave={handlePointerLeave}
     >
       <div className="hero-canvas" aria-hidden="true">
-        <Suspense fallback={<CanvasFallback />}>
-          <Scene cameraZ={cameraZ} cameraY={cameraY} mouseX={mouseX} mouseY={mouseY} />
-        </Suspense>
+        <CanvasErrorBoundary fallback={<CanvasFallback />}>
+          <Suspense fallback={<CanvasFallback />}>
+            <Scene cameraZ={cameraZ} cameraY={cameraY} mouseX={mouseX} mouseY={mouseY} />
+          </Suspense>
+        </CanvasErrorBoundary>
       </div>
       {children}
     </div>

@@ -2,6 +2,7 @@ import { StaggerGroup, StaggerItem } from "../../components/Stagger";
 import PageHero from "../../components/effects/PageHero";
 import TiltCard from "../../components/effects/TiltCard";
 import Marquee from "../../components/effects/Marquee";
+import { Target, Eye, ShieldCheck, Award, Leaf, Users, Lightbulb } from "lucide-react";
 
 export const metadata = {
   title: "About | Active Engineering Group",
@@ -26,34 +27,29 @@ const TEAM = [
     qualifications: "BSc Land Surveying, Pr. Surv. (ROLS)",
   },
   {
-    name: "Eng. Jean Pierre Niyibizi",
-    title: "Geotechnical Engineer",
-    qualifications: "BSc Civil Eng, BSc & MSc & PhD Geotechnical Eng.",
-  },
-  {
     name: "Eng. Innocent Niyonsaba",
     title: "Structural Engineer",
     qualifications: "BSc & MSc Civil Eng, Pr. Eng (IER)",
   },
   {
-    name: "QS. Valens Karanganwa",
-    title: "Quantity Surveyor",
-    qualifications: "BSc Quantity Surveying, MSc Construction Project Management, Pr. QS (RIQS)",
-  },
-  {
-    name: "Jean de Dieu Nizeyimana",
-    title: "Economist",
-    qualifications: "BSc Applied Math, MSc Economics",
-  },
-  {
-    name: "Daniel Ishimwe",
-    title: "Financial Analyst",
-    qualifications: "BBA Finance, CPA, Financial Modelling & Valuation Analyst",
-  },
-  {
-    name: "Landry Nkiriyumwami",
+    name: "IRADUKUNDA Sandrine",
     title: "Environmental & Social Specialist",
-    qualifications: "BSc Environmental Management, Pr. EA (RAPEP)",
+    qualifications: "Environmental Impact Assessment, Social Safeguards",
+  },
+  {
+    name: "Harindimana Jonas",
+    title: "Architect",
+    qualifications: "BSc Architecture, Urban Planning, Pr. Arch",
+  },
+  {
+    name: "Niyitegeka Dushime Hubert",
+    title: "Highway Engineer",
+    qualifications: "BSc Civil Eng",
+  },
+  {
+    name: "Nsengiyumva Ibrahim",
+    title: "Project Manager",
+    qualifications: "BSc Civil Eng, Pr. Eng (IER)",
   },
 ];
 
@@ -85,6 +81,9 @@ export default function AboutPage() {
           <div className="container">
             <StaggerGroup className="grid-2">
               <StaggerItem className="card" whileHover={{ y: -4 }}>
+                <div className="card-icon">
+                  <Target aria-hidden="true" />
+                </div>
                 <h2 className="section-title">MISSION</h2>
                 <p>
                   Deliver innovative, efficient, and sustainable engineering solutions that
@@ -93,6 +92,9 @@ export default function AboutPage() {
                 </p>
               </StaggerItem>
               <StaggerItem className="card" whileHover={{ y: -4 }}>
+                <div className="card-icon">
+                  <Eye aria-hidden="true" />
+                </div>
                 <h2 className="section-title">VISION</h2>
                 <p>
                   Inspire confidence in everything we do while shaping resilient infrastructure
@@ -110,20 +112,20 @@ export default function AboutPage() {
               The principles that guide our work and define our commitment to excellence
             </p>
             <StaggerGroup className="values">
-              <StaggerItem as="span" className="value">
-                Integrity
+              <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+                <ShieldCheck aria-hidden="true" /> Integrity
               </StaggerItem>
-              <StaggerItem as="span" className="value">
-                Excellence
+              <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+                <Award aria-hidden="true" /> Excellence
               </StaggerItem>
-              <StaggerItem as="span" className="value">
-                Sustainability
+              <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+                <Leaf aria-hidden="true" /> Sustainability
               </StaggerItem>
-              <StaggerItem as="span" className="value">
-                Client-Centered
+              <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+                <Users aria-hidden="true" /> Client-Centered
               </StaggerItem>
-              <StaggerItem as="span" className="value">
-                Innovation
+              <StaggerItem as="span" className="value" whileHover={{ y: -4 }}>
+                <Lightbulb aria-hidden="true" /> Innovation
               </StaggerItem>
             </StaggerGroup>
           </div>
