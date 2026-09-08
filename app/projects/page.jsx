@@ -1,7 +1,6 @@
-import { StaggerGroup, StaggerItem } from "../../components/Stagger";
-import PageHero from "../../components/effects/PageHero";
 import CountUpStat from "../../components/effects/CountUpStat";
-import { MapPin } from "lucide-react";
+import PageHero from "../../components/effects/PageHero";
+import ProjectsExplorer from "../../components/ProjectsExplorer";
 
 export const metadata = {
   title: "Projects | Active Engineering Group",
@@ -13,81 +12,114 @@ const PROJECTS = [
   {
     image: "/assets/img/1.jpg",
     alt: "Bridge works",
-    badge: "Huye City",
+    category: "road",
+    categoryLabel: "Road Construction",
     title: "HUYE CITY ROADS (RUDP PHASE 3)",
-    description: "Detailed design of Rwabuge-Mbazi road (5 km) and Tumba (1 km).",
+    description: "Detailed design of Rwabuye-Mbazi road (5 km) and Tumba (1 km).",
+    location: "Huye City",
+    metric: "6 km",
   },
   {
-    image: "/assets/img/13.jpg",
-    alt: "Survey field",
-    badge: "Nyaruguru",
+    image: "/assets/img/street-lighting.jpg",
+    alt: "Street lighting infrastructure",
+    category: "urban",
+    categoryLabel: "Street Lighting",
     title: "NYARUGURU STREET LIGHTING",
-    description: "Detailed design for Huye–Kibeho corridor.",
+    description: "Detailed design for the Huye–Kibeho corridor street lighting.",
+    location: "Nyaruguru",
+    metric: "12 km",
   },
   {
-    image: "/assets/img/Image1 (3).jpg",
-    alt: "Completed Mpazi Market building",
-    badge: "Kigali",
+    image: "/assets/img/mpazi-settlement.jpg",
+    alt: "Mpazi informal settlement upgrading site",
+    category: "urban",
+    categoryLabel: "Settlement Upgrading",
     title: "MPAZI INFORMAL SETTLEMENT UPGRADING",
     description:
       "Study and detailed design of road (8 km), footpath (9.4 km), market and football ground.",
+    location: "Nyarugenge, Kigali",
+    metric: "2023",
   },
   {
-    image: "/assets/img/10.jpg",
-    alt: "Bridge",
-    badge: "Agatobwe",
+    image: "/assets/img/agatobwe-bridge.jpg",
+    alt: "Agatobwe double span bridge",
+    category: "bridge",
+    categoryLabel: "Bridge",
     title: "AGATOBWE DOUBLE SPAN BRIDGE (60 m)",
     description: "Study and detailed design.",
+    location: "Agatobwe",
+    metric: "60 m span",
   },
   {
-    image: "/assets/img/5.jpg",
-    alt: "Rural road",
-    badge: "Nyaruguru",
+    image: "/assets/img/giswi-road.jpg",
+    alt: "Giswi rural road",
+    category: "road",
+    categoryLabel: "Road Design",
     title: "GISWI–RUGOGWE–KABERE–NSHIRI–RUHERU Road",
     description: "Detailed design (FR4 21+600 km).",
+    location: "Nyaruguru",
+    metric: "FR4 21+600 km",
   },
   {
-    image: "/assets/img/8.jpg",
-    alt: "Water supply",
-    badge: "Ngororero",
+    image: "/assets/img/ngororero-water-supply.jpg",
+    alt: "Ngororero water supply system",
+    category: "water",
+    categoryLabel: "Water Supply",
     title: "NGORORERO WATER SUPPLY SYSTEMS",
     description: "Topographic survey for design review and supervision (168.4 km).",
+    location: "Ngororero",
+    metric: "168.4 km",
   },
   {
-    image: "/assets/img/6.jpg",
-    alt: "Pipeline works",
-    badge: "Sake",
+    image: "/assets/img/sake-water-supply.jpg",
+    alt: "Sake water supply pipeline works",
+    category: "water",
+    categoryLabel: "Water Supply",
     title: "SAKE WATER SUPPLY SYSTEM – RWANDA",
     description: "Topographical surveys for feasibility, detailed designs and supervision (487 km).",
+    location: "Rwanda",
+    metric: "487 km",
   },
   {
     image: "/assets/img/rwempasha.jpg",
     alt: "Asphalt paving works on the Nyagatare-Rwempasha road",
-    badge: "Nyagatare",
+    category: "road",
+    categoryLabel: "Road Construction",
     title: "NYAGATARE–RWEMPASHA ROAD",
     description: "Feasibility studies, preliminary and detailed design of the road.",
+    location: "Nyagatare",
+    metric: "2025",
   },
   {
     image: "/assets/img/kibeho.jpg",
     alt: "Road junction at Kibeho",
-    badge: "Kibeho",
+    category: "road",
+    categoryLabel: "Mountain Road",
     title: "KIBEHO ROUNDABOUT",
     description: "Study and detailed design of the Kibeho roundabout.",
+    location: "Kibeho",
+    metric: null,
   },
   {
     image: "/assets/img/mpazi_road.jpg",
     alt: "Paved parking area under construction",
-    badge: "RWACOF",
+    category: "urban",
+    categoryLabel: "Parking Design",
     title: "PARKING AT RWACOF",
     description: "Consultancy service for design of parking at RWACOF — detailed design report.",
+    location: "RWACOF",
+    metric: null,
   },
   {
     image: "/assets/img/survey.jpg",
     alt: "Survey team with total station on the Migina Dyke corridor",
-    badge: "Bugesera",
+    category: "survey",
+    categoryLabel: "Surveying",
     title: "MIGINA DYKE ROAD MAINTENANCE",
     description:
       "Feasibility study and detailed design for maintenance of the Migina Dyke Road in Bugesera District.",
+    location: "Bugesera",
+    metric: null,
   },
 ];
 
@@ -113,20 +145,13 @@ export default function ProjectsPage() {
           ))}
         </div>
 
-        <StaggerGroup className="card-grid section">
-          {PROJECTS.map((project) => (
-            <StaggerItem className="card" key={project.title} whileHover={{ y: -4 }}>
-              <div className="card-img">
-                <img src={project.image} alt={project.alt} />
-                <span className="overlay-badge">
-                  <MapPin aria-hidden="true" /> {project.badge}
-                </span>
-              </div>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-            </StaggerItem>
-          ))}
-        </StaggerGroup>
+        <div className="section">
+          <h2 className="section-title">Our Portfolio</h2>
+          <p className="section-subtitle">
+            Explore our work by discipline, from road design and bridges to water supply and land surveying.
+          </p>
+          <ProjectsExplorer projects={PROJECTS} />
+        </div>
       </div>
     </main>
   );
