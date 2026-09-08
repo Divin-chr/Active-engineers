@@ -64,7 +64,11 @@ const FIELD_PHOTOS = [
 export default function AboutPage() {
   return (
     <main>
-      <PageHero media="/assets/img/What is Land Surveying-.mp4" mediaType="video" effect="parallax">
+      <PageHero
+        media="https://ypixm0j9cjnaw0q9.public.blob.vercel-storage.com/videos/what-is-land-surveying.mp4"
+        mediaType="video"
+        effect="parallax"
+      >
         <h1 className="display">ABOUT US</h1>
         <p className="lead">
           A dynamic and expanding Civil Engineering & Project Management firm with over four years

@@ -182,7 +182,10 @@ export default function HomePage() {
               playsInline
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             >
-              <source src="/assets/img/image1.mp4" type="video/mp4" />
+              <source
+                src="https://ypixm0j9cjnaw0q9.public.blob.vercel-storage.com/videos/image1.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           </Reveal>

@@ -170,7 +170,7 @@ export default function ServicesPage() {
   return (
     <main>
       <PageHero
-        media="/assets/img/The foundation of the pillars of the bridge- Good tools and machinery make work easy.mp4"
+        media="https://ypixm0j9cjnaw0q9.public.blob.vercel-storage.com/videos/foundation-of-the-pillars.mp4"
         mediaType="video"
         effect="kenburns"
       >
