@@ -10,7 +10,7 @@ export const metadata = {
 
 const PROJECTS = [
   {
-    image: "/assets/img/1.jpg",
+    image: "/assets/img/huye-city-roads.png",
     alt: "Bridge works",
     category: "road",
     categoryLabel: "Road Construction",
@@ -20,7 +20,7 @@ const PROJECTS = [
     metric: "6 km",
   },
   {
-    image: "/assets/img/street-lighting.jpg",
+    image: "/assets/img/lighting.JPG",
     alt: "Street lighting infrastructure",
     category: "urban",
     categoryLabel: "Street Lighting",
@@ -47,7 +47,7 @@ const PROJECTS = [
     categoryLabel: "Bridge",
     title: "AGATOBWE DOUBLE SPAN BRIDGE (60 m)",
     description: "Study and detailed design.",
-    location: "Agatobwe",
+    location: "Agatobwe, Nyaruguru",
     metric: "60 m span",
   },
   {
@@ -77,11 +77,11 @@ const PROJECTS = [
     categoryLabel: "Water Supply",
     title: "SAKE WATER SUPPLY SYSTEM – RWANDA",
     description: "Topographical surveys for feasibility, detailed designs and supervision (487 km).",
-    location: "Rwanda",
+    location: "Sake, Ngoma",
     metric: "487 km",
   },
   {
-    image: "/assets/img/rwempasha.jpg",
+    image: "/assets/img/rwempasha.jpeg",
     alt: "Asphalt paving works on the Nyagatare-Rwempasha road",
     category: "road",
     categoryLabel: "Road Construction",
@@ -97,17 +97,17 @@ const PROJECTS = [
     categoryLabel: "Mountain Road",
     title: "KIBEHO ROUNDABOUT",
     description: "Study and detailed design of the Kibeho roundabout.",
-    location: "Kibeho",
+    location: "Kibeho, Nyaruguru",
     metric: null,
   },
   {
-    image: "/assets/img/mpazi_road.jpg",
+    image: "/assets/img/rwacof-parking.jpg",
     alt: "Paved parking area under construction",
     category: "urban",
     categoryLabel: "Parking Design",
     title: "PARKING AT RWACOF",
     description: "Consultancy service for design of parking at RWACOF — detailed design report.",
-    location: "RWACOF",
+    location: "Kicukiro, Kigali",
     metric: null,
   },
   {

@@ -1,7 +1,7 @@
 export const BLOG_POSTS = [
   {
     slug: "value-engineering-urban-roads",
-    image: "/assets/img/rwempasha.jpg",
+    image: "/assets/img/Image1 (2).jpg",
     alt: "Asphalt paving works on an urban road",
     category: "Road Design",
     date: "March 15, 2024",
@@ -37,7 +37,7 @@ export const BLOG_POSTS = [
   },
   {
     slug: "street-lighting-safer-mobility",
-    image: "/assets/img/street-lighting.jpg",
+    image: "/assets/img/lighting.JPG",
     alt: "Street lighting poles along a road",
     category: "Urban Design",
     date: "Feb 15, 2024",
