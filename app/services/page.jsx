@@ -2,9 +2,9 @@ import { StaggerGroup, StaggerItem } from "../../components/Stagger";
 import PageHero from "../../components/effects/PageHero";
 import SpotlightCard from "../../components/effects/SpotlightCard";
 import UnderlineHeading from "../../components/effects/UnderlineHeading";
+import TotalStation from "../../components/icons/TotalStation";
 import {
   MapPin,
-  Mountain,
   HardHat,
   Satellite,
   Waves,
@@ -42,7 +42,7 @@ const SURVEY_SERVICES = [
     ],
   },
   {
-    icon: Mountain,
+    icon: TotalStation,
     title: "2. Topographical Surveying",
     description:
       "Mapping natural and man-made features of land, including elevations and contours. These surveys provide essential data for project planning, road design, quarry development, and environmental studies.",

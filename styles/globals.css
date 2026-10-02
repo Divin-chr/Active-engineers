@@ -206,7 +206,8 @@ a:hover {
     display: flex;
     align-items: center;
     padding: 72px 0 24px;
-    background: var(--ink);
+    /* Matches the 3D scene background, which keeps its original brass-on-black look */
+    background: #0d1013;
     color: var(--text-invert);
 }
 
@@ -240,7 +241,7 @@ a:hover {
 }
 
 .hero-canvas-fallback {
-    background: radial-gradient(900px 600px at 50% 30%, rgba(45, 212, 191, 0.12) 0%, rgba(45, 212, 191, 0) 60%), var(--ink);
+    background: radial-gradient(900px 600px at 50% 30%, rgba(201, 163, 90, 0.12) 0%, rgba(201, 163, 90, 0) 60%), #0d1013;
 }
 
 .hero-interactive > .container {
