@@ -6,9 +6,9 @@
     /* Deep teal — link/info color and solid buttons on light surfaces */
     --accent-teal: #0f766e;
     --accent-teal-700: #115e59;
-    /* Ink — teal-tinted dark bookend surfaces (header, hero, footer) */
-    --ink: #07191a;
-    --ink-2: #0e2526;
+    /* Ink — deep teal bookend surfaces (header, hero, footer, icon circles) */
+    --ink: #0b4f4b;
+    --ink-2: #0f615c;
     --text-invert: #eaf6f4;
     --muted-invert: #9bb5b2;
     /* Paper — cool light surface for body/content sections */
@@ -77,7 +77,7 @@ a:hover {
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
-    background: rgba(7, 25, 26, 0.82);
+    background: rgba(11, 79, 75, 0.9);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -850,7 +850,7 @@ select {
 }
 
 .construction-overlay {
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    background: linear-gradient(transparent, rgba(11, 79, 75, 0.9));
     padding: 24px;
     color: white;
     width: 100%;
@@ -1074,7 +1074,7 @@ select {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(11, 79, 75, 0.85);
     color: #fff;
     padding: 6px 10px;
     border-radius: 999px;
@@ -1178,7 +1178,7 @@ select {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(7, 25, 26, 0.75);
+    background: rgba(11, 79, 75, 0.78);
     /* Dark overlay for text readability */
     z-index: 1;
 }

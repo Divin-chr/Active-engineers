@@ -30,8 +30,8 @@ function CameraRig({ cameraZ, cameraY, mouseX, mouseY }) {
 export default function Scene({ cameraZ, cameraY, mouseX, mouseY }) {
   return (
     <Canvas dpr={[1, 2]} camera={{ position: [0, 4, 16], fov: 50 }} gl={{ antialias: true }}>
-      <color attach="background" args={["#07191a"]} />
-      <fog attach="fog" args={["#07191a", 14, 34]} />
+      <color attach="background" args={["#0b4f4b"]} />
+      <fog attach="fog" args={["#0b4f4b", 14, 34]} />
       <Terrain reducedMotion={false} mouseX={mouseX} mouseY={mouseY} />
       <CameraRig cameraZ={cameraZ} cameraY={cameraY} mouseX={mouseX} mouseY={mouseY} />
     </Canvas>
