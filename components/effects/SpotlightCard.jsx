@@ -12,7 +12,7 @@ export default function SpotlightCard({ className, children }) {
   const ref = useRef(null);
   const x = useMotionValue(50);
   const y = useMotionValue(50);
-  const background = useMotionTemplate`radial-gradient(220px circle at ${x}% ${y}%, rgba(201, 163, 90, 0.18), transparent 70%)`;
+  const background = useMotionTemplate`radial-gradient(220px circle at ${x}% ${y}%, rgba(45, 212, 191, 0.18), transparent 70%)`;
 
   function handlePointerMove(event) {
     if (!ref.current) return;

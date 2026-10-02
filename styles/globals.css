@@ -1,23 +1,24 @@
 :root {
-    /* Brass — primary CTA/highlight accent (nods to surveying instruments) */
-    --accent: #c9a35a;
-    --accent-700: #a9813f;
-    /* Deep teal — secondary accent, link/info color, ties back to the original brand */
-    --accent-teal: #2f6f6d;
-    --accent-teal-700: #1f4e4c;
-    /* Ink — dark bookend surfaces (header, hero, footer) */
-    --ink: #0d1013;
-    --ink-2: #171b1f;
-    --text-invert: #f5f1e8;
-    --muted-invert: #a8a49b;
-    /* Paper — warm light surface for body/content sections */
-    --paper: #f7f4ec;
+    /* Bright teal — primary CTA/highlight accent, used on dark surfaces and as a fill under dark text */
+    --accent: #2dd4bf;
+    --accent-600: #14b8a6;
+    --accent-700: #0f766e;
+    /* Deep teal — link/info color and solid buttons on light surfaces */
+    --accent-teal: #0f766e;
+    --accent-teal-700: #115e59;
+    /* Ink — teal-tinted dark bookend surfaces (header, hero, footer) */
+    --ink: #07191a;
+    --ink-2: #0e2526;
+    --text-invert: #eaf6f4;
+    --muted-invert: #9bb5b2;
+    /* Paper — cool light surface for body/content sections */
+    --paper: #f1f7f6;
     --primary: var(--accent-teal);
     --primary-700: var(--accent-teal-700);
     --bg: var(--paper);
     --surface: #ffffff;
-    --text: #1a1d1f;
-    --muted: #6b6459;
+    --text: #142022;
+    --muted: #56666a;
     --success: #22c55e;
     --warning: #f59e0b;
     --danger: #ef4444;
@@ -44,7 +45,7 @@ body {
     padding: 0;
     font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     color: var(--text);
-    background: radial-gradient(1200px 800px at 80% -20%, rgba(201, 163, 90, 0.08) 0%, rgba(201, 163, 90, 0.0) 52%), linear-gradient(180deg, #fbf9f4 0%, var(--paper) 100%);
+    background: radial-gradient(1200px 800px at 80% -20%, rgba(45, 212, 191, 0.08) 0%, rgba(45, 212, 191, 0.0) 52%), linear-gradient(180deg, #f8fbfb 0%, var(--paper) 100%);
     line-height: 1.6;
 }
 
@@ -76,7 +77,7 @@ a:hover {
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
-    background: rgba(13, 16, 19, 0.82);
+    background: rgba(7, 25, 26, 0.82);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -193,8 +194,8 @@ a:hover {
 }
 
 .btn-accent {
-    background: linear-gradient(135deg, var(--accent), var(--accent-700));
-    color: #1a1508;
+    background: linear-gradient(135deg, var(--accent), var(--accent-600));
+    color: #04201d;
     border: none;
 }
 
@@ -239,7 +240,7 @@ a:hover {
 }
 
 .hero-canvas-fallback {
-    background: radial-gradient(900px 600px at 50% 30%, rgba(201, 163, 90, 0.12) 0%, rgba(201, 163, 90, 0) 60%), var(--ink);
+    background: radial-gradient(900px 600px at 50% 30%, rgba(45, 212, 191, 0.12) 0%, rgba(45, 212, 191, 0) 60%), var(--ink);
 }
 
 .hero-interactive > .container {
@@ -918,8 +919,8 @@ select {
 
 .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(201, 163, 90, 0.25);
-    border-color: rgba(201, 163, 90, 0.3);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(45, 212, 191, 0.25);
+    border-color: rgba(45, 212, 191, 0.3);
 }
 
 
@@ -1111,7 +1112,7 @@ select {
 }
 
 .filter-chip:hover {
-    border-color: rgba(201, 163, 90, 0.4);
+    border-color: rgba(45, 212, 191, 0.4);
 }
 
 .filter-chip.active {
@@ -1177,7 +1178,7 @@ select {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(13, 16, 19, 0.75);
+    background: rgba(7, 25, 26, 0.75);
     /* Dark overlay for text readability */
     z-index: 1;
 }

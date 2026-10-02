@@ -10,12 +10,12 @@ const TERRAIN_SIZE = 60;
 const TERRAIN_SEGMENTS = 90;
 
 const MARKERS = [
-  { position: [-8, 3.2, 4], scale: 0.28, color: "#c9a35a", speed: 1.4, floatIntensity: 1.1, parallax: 0.5 },
-  { position: [6, 2.4, 6], scale: 0.22, color: "#2f6f6d", speed: 1.1, floatIntensity: 0.9, parallax: 1.1 },
-  { position: [-3, 4.1, -2], scale: 0.32, color: "#c9a35a", speed: 1.7, floatIntensity: 1.3, parallax: 0.3 },
-  { position: [9, 3.6, -3], scale: 0.2, color: "#f5f1e8", speed: 1.3, floatIntensity: 1, parallax: 0.9 },
-  { position: [2, 5, 8], scale: 0.26, color: "#2f6f6d", speed: 0.9, floatIntensity: 1.2, parallax: 1.3 },
-  { position: [-10, 2.8, -6], scale: 0.24, color: "#c9a35a", speed: 1.5, floatIntensity: 0.8, parallax: 0.4 },
+  { position: [-8, 3.2, 4], scale: 0.28, color: "#2dd4bf", speed: 1.4, floatIntensity: 1.1, parallax: 0.5 },
+  { position: [6, 2.4, 6], scale: 0.22, color: "#0d9488", speed: 1.1, floatIntensity: 0.9, parallax: 1.1 },
+  { position: [-3, 4.1, -2], scale: 0.32, color: "#2dd4bf", speed: 1.7, floatIntensity: 1.3, parallax: 0.3 },
+  { position: [9, 3.6, -3], scale: 0.2, color: "#eaf6f4", speed: 1.3, floatIntensity: 1, parallax: 0.9 },
+  { position: [2, 5, 8], scale: 0.26, color: "#0d9488", speed: 0.9, floatIntensity: 1.2, parallax: 1.3 },
+  { position: [-10, 2.8, -6], scale: 0.24, color: "#2dd4bf", speed: 1.5, floatIntensity: 0.8, parallax: 0.4 },
 ];
 
 // Deterministic PRNG (mulberry32) so the generated terrain looks the same on every load
@@ -81,7 +81,7 @@ function TerrainMesh({ reducedMotion }) {
   return (
     <group ref={groupRef}>
       <mesh geometry={geometry} rotation={[-Math.PI / 2, 0, 0]}>
-        <meshBasicMaterial color="#c9a35a" wireframe transparent opacity={0.55} />
+        <meshBasicMaterial color="#2dd4bf" wireframe transparent opacity={0.55} />
       </mesh>
     </group>
   );
